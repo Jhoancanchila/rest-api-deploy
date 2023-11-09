@@ -1,0 +1,21 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "SET DEBUG=app:* && nodemon app",
+    "dev2": "export DEBUG=app:* && nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.18.2",
+    "nodemon": "3.0.1",
+    "zod": "3.22.4"
+  }
+}

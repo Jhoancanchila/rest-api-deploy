@@ -1,0 +1,39 @@
+###recuperar las movies
+GET http://localhost:1234/movies
+
+###recuperar movies por id
+
+GET http://localhost:1234/movies/603
+
+###recuperar movies por género
+
+GET http://localhost:1234/movies?lang=ES
+
+###CREAR UNA MOVIE
+
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "popularity": 5000,
+    "vote_count": 20381,
+    "video": false,
+    "poster_path": "/1yWmCAIGSVNuTOGyz9F48W9g1Ux.jpg",
+    "adult": false,
+    "backdrop_path": "/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg",
+    "original_language": "es",
+    "original_title": "Fight Club",
+    "genre_ids": [22],
+    "title": "El justiciero",
+    "vote_average": 9.5,
+    "overview": "Un hombre que cobra justicia",
+    "release_date": 2023
+}
+
+### Actualizar una película
+PATCH http://localhost:1234/movies/38626595-909f-4062-a6df-14a009952ad5
+Content-Type: application/json
+
+{
+  "release_date": 1998
+}
